@@ -1,0 +1,57 @@
+\documentclass[11pt]{report} 
+
+%% Разметка документа
+\usepackage{geometry}
+\geometry{a5paper,margin=20mm,right=0.75cm,left=1.25cm,top=1cm}
+ 
+%% Язык и кодировка
+\usepackage[english,russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\frenchspacing
+\raggedbottom
+\renewcommand{\arraystretch}{1.6}
+\columnsep2em
+
+%% Пакеты
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{hyperref}
+
+%% Гиперссылки
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    bookmarks=true,
+    pdftitle={Ирредукции},
+	pdfsubject={},
+	pdfauthor={Брюно Латур},
+	pdfkeywords={}
+}
+            
+\usepackage{amssymb}
+\renewcommand{\labelitemi}{$\square$}
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+\title{Ирредукции}
+\author{Брюно Латур}
+\date{}
+
+\begin{document}
+\maketitle
+
+\thispagestyle{empty}
+
+\tableofcontents
+
+\input{chapter1}
+\input{chapter2}
+\input{chapter3}
+\input{chapter4}
+
+\end{document}
