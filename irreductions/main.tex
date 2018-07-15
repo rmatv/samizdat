@@ -13,11 +13,16 @@
 \renewcommand{\arraystretch}{1.6}
 \columnsep2em
 
-%% Пакеты
+%% Представление
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{hyperref}
+\usepackage{paratype} % гарнитура Паратайп
+
+%% Содержание
+\usepackage{tocloft} % точки в строках содержания
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % для глав
 
 %% Гиперссылки
 \hypersetup{
