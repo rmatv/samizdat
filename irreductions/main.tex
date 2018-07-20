@@ -1,8 +1,8 @@
-\documentclass[11pt]{report} 
+\documentclass[a4paper,10pt]{report}
 
 %% Разметка документа
 \usepackage{geometry}
-\geometry{a5paper,margin=20mm,right=0.75cm,left=1.25cm,top=1cm}
+\geometry{right=1cm,left=2.5cm,top=2cm,bottom=2cm}
  
 %% Язык и кодировка
 \usepackage[english,russian]{babel}
@@ -18,7 +18,12 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{hyperref}
-\usepackage{paratype} % гарнитура Паратайп
+%\usepackage{tempora} % гарнитура Tempora
+%\usepackage{dejavu} % гарнитура DejaVu
+%\usepackage{droid} % шрифты Droid
+\usepackage{paratype} % шрифты Paratype
+
+\usepackage{ucs}
 
 %% Содержание
 \usepackage{tocloft} % точки в строках содержания
@@ -42,6 +47,7 @@
 
 \clubpenalty=10000
 \widowpenalty=10000
+\sloppy
 
 \title{Ирредукции}
 \author{Брюно Латур}
@@ -49,8 +55,6 @@
 
 \begin{document}
 \maketitle
-
-\thispagestyle{empty}
 
 \tableofcontents
 
